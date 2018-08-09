@@ -32,9 +32,7 @@ gulp.task('scripts', () => {
     gulp.src('js/*.js').pipe(babel({
         presets: ['env']
     })).pipe(gulp.dest('dist/js'));
-    gulp.src('./sw.js').pipe(babel({
-        presets: ['env']
-    })).pipe(gulp.dest('dist'));
+    gulp.src('./sw.js').pipe(gulp.dest('dist'));
 
 
 });

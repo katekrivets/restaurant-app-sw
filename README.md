@@ -12,7 +12,7 @@ For the **Restaurant Reviews** projects, you will incrementally convert a static
 
 In a terminal:
  * cd dist
- * check the version of Python you have: `python -V` - If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 8000` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 8000`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
+ * check the version of Python you have: `python -V` - If you have Python 2.x, spin up the server with `python -m SimpleHTTPServer 1111` (or some other port, if port 8000 is already in use.) For Python 3.x, you can use `python3 -m http.server 1111`. If you don't have Python installed, navigate to Python's [website](https://www.python.org/) to download and install the software.
 
 2. With your server running, visit the site: `http://localhost:1111`, and look around for a bit to see what the current experience looks like.
 3. Locate through site

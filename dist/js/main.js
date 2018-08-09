@@ -160,6 +160,7 @@ var createRestaurantHTML = function createRestaurantHTML(restaurant) {
   var image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  image.alt = restaurant.name + ' Interior Photo';
   li.append(image);
 
   var name = document.createElement('h1');
@@ -199,16 +200,3 @@ var addMarkersToMap = function addMarkersToMap() {
     self.markers.push(marker);
   });
 };
-
-/**
- *     Service Worker registration
- */
-document.addEventListener("DOMContentLoaded", function (event) {
-  if (navigator.serviceWorker) {
-    navigator.serviceWorker.register("/sw.js").then(function (registration) {
-      return console.log("SW registered!", registration);
-    }).catch(function (e) {
-      return console.log("Registration failed ", e);
-    });
-  }
-});
